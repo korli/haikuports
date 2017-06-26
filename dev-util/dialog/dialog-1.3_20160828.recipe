@@ -9,7 +9,7 @@ LICENSE="GNU LGPL v2"
 SOURCE_URI="ftp://invisible-island.net/dialog/dialog-${portVersion/_/-}.tgz"
 CHECKSUM_SHA256="453095abaec288bfbc1ca9faced917e17742cff1ea45ec46210071ac153562f9"
 SOURCE_DIR="dialog-${portVersion/_/-}"
-REVISION="2"
+REVISION="3"
 PATCHES="dialog-$portVersion.patchset"
 
 ARCHITECTURES="x86_gcc2 x86 x86_64"

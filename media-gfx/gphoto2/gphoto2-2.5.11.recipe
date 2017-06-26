@@ -8,7 +8,7 @@ developers."
 HOMEPAGE="http://www.gphoto.org/"
 COPYRIGHT="The gphoto2 team"
 LICENSE="GNU GPL v2"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="http://sourceforge.net/projects/gphoto/files/gphoto/$portVersion/gphoto2-$portVersion.tar.gz"
 CHECKSUM_SHA256="c2b85221a1d90a416b309283695ebaecaf5de2276371fc2292d655b745ccf6db"
 

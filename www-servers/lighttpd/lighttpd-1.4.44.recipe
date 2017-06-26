@@ -9,7 +9,7 @@ solution for every server that is suffering load problems."
 HOMEPAGE="https://www.lighttpd.net/"
 COPYRIGHT="2003-2016 Jan Kneschke"
 LICENSE="BSD (3-clause)"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="https://download.lighttpd.net/lighttpd/releases-1.4.x/lighttpd-$portVersion.tar.xz"
 CHECKSUM_SHA256="adb66ca985651957feb209c91c55ebbf917d23630bfc3a216a2f70043c7b5422"
 ADDITIONAL_FILES="
@@ -92,6 +92,7 @@ PROVIDES_mod_geoip="
 	"
 REQUIRES_mod_geoip="
 	lighttpd$secondaryArchSuffix == $portVersion base
+	haiku$secondaryArchSuffix
 	lib:libGeoIP$secondaryArchSuffix
 	"
 

@@ -7,7 +7,7 @@ HOMEPAGE="https://wiki.gnome.org/Projects/Vala"
 COPYRIGHT="2006-2016 Jürg Billeter
 	2006-2016 Raffaele Sandrini"
 LICENSE="GNU LGPL v2.1"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="https://download.gnome.org/sources/vala/${portVersion%.*}/vala-$portVersion.tar.xz"
 CHECKSUM_SHA256="dd0d47e548a34cfb1e4b04149acd082a86414c49057ffb79902eb9a508a161a9"
 SOURCE_DIR="vala-$portVersion"

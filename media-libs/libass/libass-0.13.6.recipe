@@ -8,7 +8,7 @@ COPYRIGHT="2006-2017 libass contributors
 	2011-2014 Yu Zhuohuang
 	2013 Rodger Combs"
 LICENSE="ISC"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="https://github.com/libass/libass/releases/download/$portVersion/libass-$portVersion.tar.xz"
 CHECKSUM_SHA256="f8a874d104e3e72e2cc057e5a1710c650b10367486845a26e5ff28ed7a912c2d"
 

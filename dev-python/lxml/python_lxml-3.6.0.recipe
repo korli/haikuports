@@ -10,7 +10,7 @@ COPYRIGHT="2003-2010 Gustavo Niemeyer"
 #FIXME: check exact license
 #gentoo says: LICENSE="BSD ElementTree GPL-2 PSF-2"
 LICENSE="GNU GPL v2"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="http://lxml.de/files/lxml-$portVersion.tgz"
 CHECKSUM_SHA256="9c74ca28a7f0c30dca8872281b3c47705e21217c8bc63912d95c9e2a7cac6bdf"
 SOURCE_DIR="lxml-$portVersion"

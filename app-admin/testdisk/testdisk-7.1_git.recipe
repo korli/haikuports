@@ -28,7 +28,7 @@ tool in performing onsite recovery."
 HOMEPAGE="http://www.cgsecurity.org/wiki/TestDisk"
 COPYRIGHT="1998-2008 Christophe GRENIER"
 LICENSE="GNU GPL v2"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="git+http://git.cgsecurity.org/testdisk.git#d0c0bf21ddadd60c7bb2188a66d39039d5cd2f9c"
 #CHECKSUM_SHA256=""
 

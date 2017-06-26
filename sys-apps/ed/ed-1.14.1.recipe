@@ -8,7 +8,7 @@ for Unix, and thus widely available."
 HOMEPAGE="https://www.gnu.org/software/ed/"
 COPYRIGHT="1992-2017 Free Software Foundation, Inc."
 LICENSE="GNU GPL v3"
-REVISION="1"
+REVISION="2"
 # Upstream only ships lziped tarballs, not usable on pure x86_gcc2.
 #SOURCE_URI="https://ftp.gnu.org/gnu/ed/ed-$portVersion.tar.lz"
 #CHECKSUM_SHA256="ffb97eb8f2a2b5a71a9b97e3872adce953aa1b8958e04c5b7bf11d556f32552a"

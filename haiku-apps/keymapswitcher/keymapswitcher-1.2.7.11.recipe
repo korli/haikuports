@@ -8,11 +8,12 @@ COPYRIGHT="
 	2003-2013 Siarzhuk Zharski
 	"
 LICENSE="BSD (4-clause)"
-REVISION="2"
+REVISION="3"
 commit="dc72883019995034241eec5e9152cb817dc52002"
 SOURCE_URI="https://github.com/HaikuArchives/KeymapSwitcher/archive/$commit.zip"
 SOURCE_DIR="KeymapSwitcher-$commit"
 CHECKSUM_SHA256="d9b6fcd6d7839c68a2a99db691185ea7590cd167eae1b9c7ff252bc9525ec400"
+PATCHES="keymapswitcher-$portVersion.patchset"
 
 ARCHITECTURES="x86_gcc2 x86 x86_64"
 SECONDARY_ARCHITECTURES="x86_gcc2 x86"

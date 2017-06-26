@@ -7,7 +7,7 @@ HOMEPAGE="https://github.com/python-imaging/Pillow
 COPYRIGHT="1997-2011 by Secret Labs AB
 	1995-2011 by Fredrik Lundh"
 LICENSE="HPND"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="https://pypi.python.org/packages/source/P/Pillow/Pillow-$portVersion.tar.gz"
 CHECKSUM_SHA256="64b0a057210c480aea99406c9391180cd866fc0fd8f0b53367e3af21b195784a"
 SOURCE_DIR="Pillow-$portVersion"

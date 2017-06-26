@@ -1,0 +1,87 @@
+From 7c0db7543dbb371907de3e4a3c81bbb0140d352f Mon Sep 17 00:00:00 2001
+From: Jerome Duval <jerome.duval@gmail.com>
+Date: Fri, 23 Jun 2017 21:48:18 +0200
+Subject: B_BEOS_DATA_DIRECTORY doesn't exist.
+
+
+diff --git a/DeskView.cpp b/DeskView.cpp
+index 2485ac1..6a9281a 100644
+--- a/DeskView.cpp
++++ b/DeskView.cpp
+@@ -610,7 +610,7 @@ void DeskView::ChangeKeyMapSilent(int32 change_to, bool force /*= false*/)
+ 	param << "d" << active_keymap;
+ 	settings->FindInt32(param.String(), &dir);
+ 	find_directory((directory_which)dir, &path);
+-	if(dir == B_BEOS_DATA_DIRECTORY)
++	if(dir == B_SYSTEM_DATA_DIRECTORY)
+ 		path.Append("Keymaps");
+ 	else	
+ 		path.Append("Keymap");
+diff --git a/Settings.cpp b/Settings.cpp
+index c6dd82b..965a04d 100644
+--- a/Settings.cpp
++++ b/Settings.cpp
+@@ -56,7 +56,7 @@ status_t Settings::SetDefaults()
+ 	SetInt32("active", 0L);
+ 	SetInt32("keymaps", 1L);
+ 	SetString("n0", "US-International");
+-	SetInt32("d0", B_BEOS_DATA_DIRECTORY); 
++	SetInt32("d0", B_SYSTEM_DATA_DIRECTORY); 
+ 	SetInt32("system_wide", 0);
+ 
+ 	return status = B_OK;
+diff --git a/SettingsWindow.cpp b/SettingsWindow.cpp
+index 3cfed74..c8fe8ee 100644
+--- a/SettingsWindow.cpp
++++ b/SettingsWindow.cpp
+@@ -742,14 +742,14 @@ SettingsWindow::KeymapListView::ResetKeymapsList(const Settings* settings)
+ 
+ 		BPath path;
+ 		find_directory((directory_which)dir, &path);
+-		if(dir == B_BEOS_DATA_DIRECTORY)
++		if(dir == B_SYSTEM_DATA_DIRECTORY)
+ 			path.Append("Keymaps");
+ 		else
+ 			path.Append("Keymap");
+ 		path.Append(name.String());
+ 
+ 		BString display_name(name);
+-		if(dir == B_BEOS_DATA_DIRECTORY)
++		if(dir == B_SYSTEM_DATA_DIRECTORY)
+ 			display_name += B_TRANSLATE(" (system)");
+ 		else
+ 			display_name += B_TRANSLATE(" (user)");
+@@ -803,7 +803,7 @@ SettingsWindow::KeymapListView::MessageReceived(BMessage *message)
+ 			index = IndexOf(ConvertFromScreen(message->DropPoint()));
+ 			KeymapItem *new_item = new KeymapItem(item);
+ 			BString name = new_item->Text();
+-			if(B_BEOS_DATA_DIRECTORY == new_item->Dir())
++			if(B_SYSTEM_DATA_DIRECTORY == new_item->Dir())
+ 				name += B_TRANSLATE(" (system)");
+ 			else
+ 				name += B_TRANSLATE(" (user)");
+@@ -904,7 +904,7 @@ SettingsWindow::KeymapOutlineListView::PopulateTheTree()
+ 		const char* subDir;
+ 		const char* name;
+ 	} ad[] = {
+-		{ B_BEOS_DATA_DIRECTORY,	 "Keymaps", B_TRANSLATE("System") },
++		{ B_SYSTEM_DATA_DIRECTORY,	 "Keymaps", B_TRANSLATE("System") },
+ 		{ B_USER_SETTINGS_DIRECTORY, "Keymap",  B_TRANSLATE("User")   }
+ 	};
+ 
+diff --git a/SwitchFilter.cpp b/SwitchFilter.cpp
+index 605b066..56d3050 100644
+--- a/SwitchFilter.cpp
++++ b/SwitchFilter.cpp
+@@ -404,7 +404,7 @@ SwitchFilter::UpdateRemapTable()
+ 
+ 	BPath path;
+ 	find_directory((directory_which)dir, &path);
+-	if(dir == B_BEOS_DATA_DIRECTORY)
++	if(dir == B_SYSTEM_DATA_DIRECTORY)
+ 		path.Append("Keymaps");
+ 	else
+ 		path.Append("Keymap");
+-- 
+2.12.2
+

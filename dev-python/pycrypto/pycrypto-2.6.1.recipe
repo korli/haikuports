@@ -6,7 +6,7 @@ etc.).
 "
 HOMEPAGE="http://pypi.python.org/pypi/pycrypto/2.6"
 SOURCE_URI="http://pypi.python.org/packages/source/p/pycrypto/pycrypto-2.6.1.tar.gz"
-REVISION="1"
+REVISION="2"
 CHECKSUM_SHA256="f2ce1e989b272cfcb677616763e0a2e7ec659effa67a88aa92b3a65528f60a3c"
 
 ARCHITECTURES="arm ppc x86 x86_gcc2 x86_64"
@@ -18,6 +18,7 @@ PROVIDES="
 REQUIRES="
 	haiku
 	cmd:python
+	lib:libpython2.7
 	"
 
 BUILD_REQUIRES="

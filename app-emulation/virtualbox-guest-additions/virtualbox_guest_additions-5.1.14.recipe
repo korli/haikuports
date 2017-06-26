@@ -11,7 +11,7 @@ LICENSE="
 	GNU GPL v2
 	CDDL v1
 	"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="http://download.virtualbox.org/virtualbox/$portVersion/VirtualBox-$portVersion.tar.bz2"
 CHECKSUM_SHA256="8267bb026717c6e55237eb798210767d9c703cfcdf01224d9bc26f7dac9f228a"
 SOURCE_DIR="VirtualBox-$portVersion"

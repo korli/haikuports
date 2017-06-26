@@ -3,7 +3,7 @@ DESCRIPTION="Attila Mezei's Interface Elements. This library helps you to \
 instantiate window archives."
 HOMEPAGE="http://github.com/HaikuArchives/InterfaceElements"
 SOURCE_URI="git://github.com/HaikuArchives/InterfaceElements"
-REVISION="1"
+REVISION="2"
 LICENSE="GNU GPL v3"
 COPYRIGHT="1997-1998 Attila Mezei"
 

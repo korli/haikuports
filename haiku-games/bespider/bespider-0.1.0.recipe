@@ -8,7 +8,7 @@ HOMEPAGE="https://github.com/HaikuArchives/BeSpider"
 COPYRIGHT="2013 Przemysław Buczkowski,
 	2013 Luke (noryb009)"
 LICENSE="MIT"
-REVISION="1"
+REVISION="2"
 SOURCE_URI="git://github.com/HaikuArchives/BeSpider.git#2af10fba06839a79a96b7cde98fd7e10abce7ec9"
 
 ARCHITECTURES="x86_gcc2 x86 x86_64"

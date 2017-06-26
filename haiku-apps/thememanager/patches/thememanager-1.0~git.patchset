@@ -1,0 +1,31 @@
+From 703338e73894f8fb68b4f0ab9c0018fa9533a02a Mon Sep 17 00:00:00 2001
+From: Jerome Duval <jerome.duval@gmail.com>
+Date: Sat, 24 Jun 2017 11:38:23 +0200
+Subject: B_BEOS_DATA_DIRECTORY doesn't exist.
+
+
+diff --git a/src/Utils.cpp b/src/Utils.cpp
+index e029cc9..8a14e70 100644
+--- a/src/Utils.cpp
++++ b/src/Utils.cpp
+@@ -117,7 +117,7 @@ escape_find_directory(BString *dir)
+ 	_BORK(B_BEOS_TRANSLATORS_DIRECTORY);
+ 	_BORK(B_BEOS_MEDIA_NODES_DIRECTORY);
+ 	_BORK(B_BEOS_SOUNDS_DIRECTORY);
+-	_BORK(B_BEOS_DATA_DIRECTORY);
++	_BORK(B_SYSTEM_DATA_DIRECTORY);
+ 	// not in the declared order, so others are picked first
+ 	_BORK(B_BEOS_ADDONS_DIRECTORY);
+ 	_BORK(B_BEOS_SYSTEM_DIRECTORY);
+@@ -217,7 +217,7 @@ unescape_find_directory(BString *dir)
+ 	_BORK(B_BEOS_TRANSLATORS_DIRECTORY);
+ 	_BORK(B_BEOS_MEDIA_NODES_DIRECTORY);
+ 	_BORK(B_BEOS_SOUNDS_DIRECTORY);
+-	_BORK(B_BEOS_DATA_DIRECTORY);
++	_BORK(B_SYSTEM_DATA_DIRECTORY);
+ 	// not in the declared order, so others are picked first
+ 	_BORK(B_BEOS_ADDONS_DIRECTORY);
+ 	_BORK(B_BEOS_SYSTEM_DIRECTORY);
+-- 
+2.12.2
+

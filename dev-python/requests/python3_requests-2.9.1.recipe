@@ -4,7 +4,7 @@ HOMEPAGE="http://python-requests.org/
 	http://pypi.python.org/pypi/requests"
 COPYRIGHT="2014 Kenneth Reitz"
 LICENSE="Apache v2"
-REVISION="2"
+REVISION="3"
 SOURCE_URI="https://pypi.python.org/packages/source/r/requests/requests-$portVersion.tar.gz"
 CHECKSUM_SHA256="c577815dd00f1394203fc44eb979724b098f88264a9ef898ee45b8e5e9cf587f"
 SOURCE_DIR="requests-$portVersion"

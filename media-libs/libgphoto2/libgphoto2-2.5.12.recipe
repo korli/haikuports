@@ -9,7 +9,7 @@ to client (programs that call libgphoto2)."
 HOMEPAGE="http://www.gphoto.org/"
 COPYRIGHT="The gphoto2 team"
 LICENSE="GNU GPL v2"
-REVISION="2"
+REVISION="3"
 SOURCE_URI="http://sourceforge.net/projects/gphoto/files/libgphoto2-$portVersion.tar.bz2"
 CHECKSUM_SHA256="b9bb28990fde45ac385e4851a07dbad2e1250404b535b0a3a3b898bb431e4e2e"
 

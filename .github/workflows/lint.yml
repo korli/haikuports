@@ -1,8 +1,8 @@
 name: Lint
 'on':
-#  push:
-#    branches:
-#      - master
+  push:
+    branches:
+      - testaction
   pull_request:
     branches:
       - master

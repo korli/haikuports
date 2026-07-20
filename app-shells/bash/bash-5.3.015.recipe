@@ -36,7 +36,7 @@ PATCHES="
 ARCHITECTURES="all"
 
 PROVIDES="
-	bash = $portVersion
+	bash = $portVersion 
 	cmd:bash = $portVersion
 	cmd:bashbug = $portVersion
 	cmd:sh
